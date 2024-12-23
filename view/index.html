@@ -12,7 +12,7 @@
     <header>
         <nav class="menu-principal">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="view/index.html">Home</a></li>
                 <li><a href="view/contacto.html">Contacto</a></li>
                 <li><a href="view/nosotros.html">Nosotros</a></li>
             </ul>
@@ -23,6 +23,8 @@
         <h1 id="titulo">Decoracion para el hogar</h1> 
         <p id="parrafo"> Encontrá los mejores diseños para decorar tus ambientes. Conocé toda la variedad que tenemos para ofrecerte.</p>
         <section class="galeria">
+
+
         <div>
         <h2 id="categorias">Nuevos ingresos</h2>
         <a href="#">
@@ -68,10 +70,85 @@
         </div>
     </section>
 
+
 <a href="https://www.mercadolibre.com.ar/ayuda/como-cancelo-una-compra_15861?_ga=2.244940098.659252949.1653605268-553604038.1653605268">¿Cómo cancelar una compra?</a>
 <input type="text" placeholder="Busca productos, marcas y ofertas">
 <button type="submit">Buscar</button>
 <body class=fondo>
- 
+
+
+  <title>Carrito de Compras</title>
+  <style>
+    .product { margin: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 5px; }
+    .cart { margin-top: 20px; border-top: 2px solid #333; padding-top: 15px; }
+    .cart-item { margin-bottom: 10px; }
+    .cart-total { font-weight: bold; }
+    button { cursor: pointer; padding: 10px 15px; background-color: #007BFF; color: white; border: none; border-radius: 5px; }
+  </style>
+
+
+  <h1>Tienda de Decoración</h1>
+  <div class="product" data-id="1" data-name="Cuadro Abstracto" data-price="2500">
+    <h3>Cuadro Abstracto</h3>
+    <p>Precio: $2500</p>
+    <button class="add-to-cart">Agregar al carrito</button>
+  </div>
+  <div class="product" data-id="2" data-name="Lámpara Vintage" data-price="3500">
+    <h3>Lámpara Vintage</h3>
+    <p>Precio: $3500</p>
+    <button class="add-to-cart">Agregar al carrito</button>
+  </div>
+  <div class="product" data-id="3" data-name="Planta Decorativa" data-price="1500">
+    <h3>Planta Decorativa</h3>
+    <p>Precio: $1500</p>
+    <button class="add-to-cart">Agregar al carrito</button>
+  </div>
+
+  <div class="cart">
+    <h2>Carrito de Compras</h2>
+    <div class="cart-items"></div>
+    <p class="cart-total">Total: $0</p>
+  </div>
+
+
+<div class="cart">
+  <h2>Carrito de Compras</h2>
+  <div class="cart-items"></div>
+  <p class="cart-total">Total: $0</p>
+  <button class="empty-cart">Vaciar Carrito</button>
+</div>
+
+<title>Lista de Productos</title>
+<h1>Productos Disponibles</h1>
+<button id="mostrarProductos">Mostrar Productos</button>
+<ul id="listaProductos"></ul>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .producto {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .descripcion {
+        display: none;
+        color: #555;
+        margin-top: 0.5rem;
+    }
+</style>
+
+<h1>Lista de Productos</h1>
+<div id="productos-container"></div>
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
+

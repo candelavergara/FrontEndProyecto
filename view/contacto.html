@@ -112,38 +112,40 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="view/index.html">Home</a></li>
+                <li><a href="view/contacto.html">Contacto</a></li>
+                <li><a href="view/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Contáctanos</h1>
-        <h2>Llena el siguiente formulario de contacto y nos comunicaremos contigo</h2>
-        <form action="" method="">
-            <fieldset>
-                <legend>Datos personales</legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido">
-                <label for="edad">Edad:</label>
-                <input type="number" name="edad" id="edad">
-                <label for="telefono">Número de teléfono:</label>
-                <input type="number" name="telefono" id="telefono">
-                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </fieldset>
-            <fieldset>
-                <label for="asunto">Asunto:</label>
-                <input type="text" name="asunto" id="asunto">
-                <label for="contenido">Contenido:</label>
-                <textarea name="contenido" id="contenido" cols="30" rows="10"></textarea>
-            </fieldset>
-        </form>
+<h2>Llena el siguiente formulario de contacto y nos comunicaremos contigo</h2>
+<form id="formulario-contacto" action="" method="">
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" required>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" required>
+        <label for="telefono">Número de teléfono:</label>
+        <input type="number" name="telefono" id="telefono" required>
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+    </fieldset>
+    <fieldset>
+        <legend>Información adicional</legend>
+        <label for="asunto">Asunto:</label>
+        <input type="text" name="asunto" id="asunto" required>
+        <label for="contenido">Contenido:</label>
+        <textarea name="contenido" id="contenido" cols="30" rows="10" required></textarea>
+    </fieldset>
+    <button type="submit" id="enviar">Enviar</button>
+</form>
     </main>
     <footer>&copy; 2024 Mi Sitio Web</footer>
 </body>

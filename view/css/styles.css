@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(231, 211, 196);
+}
+#titulo {
+    color: rgb(64, 4, 4);
+    text-align: center;
+}
+
+h2#categorias {
+    color: rgb(231, 184, 184);
+    text-align: center;
+    font-size: 2em;
+    padding: 20px 0;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+#parrafo {
+    font-size: x-large;
+    color: rgb(48, 5, 5);
+    text-align: center;
+}
+
+.galeria {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.galeria > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px; 
+}
+
+
+.imagenes {
+    border-color: brown;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(199, 176, 221);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imagenes img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+h2#categorias button{
+   display: block;
+   width: 90%;
+   margin: 15px;
+   padding: 10px;
+   background-color: blueviolet;
+   color: blue;
+   border: none;
+  cursor: pointer;
+} 
+
+
+
+.menu-principal{
+   background-color: rgb(0, 0, 0);
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   top: 0;
+   z-index: 1000;
+   font-size: medium;
+}
+.menu-principal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu-principal ul li {
+    margin: 0;
+}
+.menu-principal ul li a{
+   display: block;
+   color: white;
+   padding: 15px 20px;
+   text-decoration: none;
+}
+.menu-principal ul li a:hover {
+    background-color: rgb(214, 156, 156);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
+  margin: 20px auto; 
+  max-width: 1000px;
+  flex-wrap: wrap; 
+}
+
+.card {
+  width: 300px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card p {
+  padding: 15px;
+  font-family: 'Radio Canada', sans-serif;
+  color: #333;
+}
+
+.footer ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-family: 'Tiro Tamil', sans-serif;
+}
+
+.cart {
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #f8f8f8;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item button {
+  background-color: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #b52a37;
+}
+
+.empty-cart {
+  background-color: #ffc107;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.empty-cart:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+.cart-total {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333;
+}
